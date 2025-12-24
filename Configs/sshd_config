@@ -1,0 +1,33 @@
+This configuration enforces Key-Based Authentication, disables Root login, and sets a 5-minute idle timeout to automatically disconnect inactive sessions.
+
+
+# Hardened SSH Configuration
+# Based on CIS Benchmarks / Best Practices
+
+# Ensure SSH Protocol 2 is used (Disable Protocol 1)
+Protocol 2
+
+# Disable root login to prevent direct superuser attacks
+PermitRootLogin no
+
+# Disable password authentication (Force Key-Based Auth)
+PasswordAuthentication no
+
+# Enable Public Key Authentication
+PubkeyAuthentication yes
+
+# Prevent login with empty passwords
+PermitEmptyPasswords no
+
+# Limit maximum authentication attempts to prevent brute-force
+MaxAuthTries 3
+
+# Reduce login grace time to disconnect unauthenticated sessions quickly
+LoginGraceTime 20
+
+# Idle Timeout Settings (Disconnect idle sessions after 5 mins)
+ClientAliveInterval 300
+ClientAliveCountMax 2
+
+# Whitelist specific users only
+AllowUsers student

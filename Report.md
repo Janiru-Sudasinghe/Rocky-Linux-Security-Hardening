@@ -42,10 +42,24 @@ The project followed a "Audit -> Remediation -> Verify" lifecycle:
 * *Resolution:* I had to access the VM via the VMware console to manually add the custom SSH port to the `firewalld` allowed list.
 
 ## 6. Evidence
-*(Your screenshots go here - make sure to reference the specific screenshot files you just uploaded)*
-* **Initial Audit Score:** `![Initial Score](Evidence/Task 1.1.png)`
-* **SSH Configuration:** `![SSH Config](Evidence/Task 1.2.png)`
-* **Final Audit Score:** `![Final Score](Evidence/Task 10.1.png)`
+Below are the screenshots verifying the hardening steps. Click the links to view the evidence.
+
+### Initial Assessment
+* [Task 1.1 - Initial Audit Score (Prior to Hardening)](Evidence/Task%201.1.png)
+* [Task 1.2 - SSH Connection Test](Evidence/Task%201.2.png)
+* [Task 1.3 - Initial IP Configuration](Evidence/Task%201.3.png)
+* [Task 1.4 - System Version Check](Evidence/Task%201.4.png)
+* [Task 1.5 - User Account Check](Evidence/Task%201.5.png)
+
+### Hardening Implementation
+* [Task 2.1 - Firewall Configuration](Evidence/Task%202.1.png)
+* [Task 4.1 - SSH Config Updates](Evidence/Task%204.1.png)
+* [Task 4.2 - Root Login Disabled](Evidence/Task%204.2.png)
+* [Task 4.3 - SSH Port Change Verification](Evidence/Task%204.3.png)
+* [Task 4.4 - SSH Service Restart](Evidence/Task%204.4.png)
+
+### Verification
+* [Task 10.1 - Final Audit Score (Post Hardening)](Evidence/Task%2010.1.png)
 
 ## 7. Future Scope
 To scale this project, I plan to convert these manual hardening steps into an **Ansible Playbook** to automate the deployment of secure baselines across multiple servers simultaneously.

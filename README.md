@@ -76,10 +76,12 @@ The efficacy of the hardening process was measured quantitatively using **Lynis*
     * Enabled Reverse Path Filtering (`rp_filter`) to prevent IP spoofing.
     * Ignored ICMP Broadcast requests to prevent Smurf attacks.
 
-### Task 9 & 10: Verification & Intrusion Detection
+### Task 9: Verification 
 * **Final Audit:** Re-ran Lynis to calculate the hardening delta.
     * *Baseline Score:* 66
     * *Hardened Score:* 72
+
+### Task 10: Intrusion Detection
 * **"Break & Detect" Scenario:**
     * **Action:** Deliberately weakened security by changing `PasswordAuthentication` to `yes` in `/etc/ssh/sshd_config` to simulate an unauthorized configuration change.
     * **Detection:** Successfully identified the file modification event using `auditd` logs via the command: `sudo ausearch -k ssh_config`.

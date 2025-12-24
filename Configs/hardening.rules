@@ -1,0 +1,12 @@
+# Track identity changes
+-w /etc/passwd -p wa -k identity
+-w /etc/group -p wa -k identity
+
+# Track privilege escalation attempts
+-w /etc/sudoers -p wa -k priv_esc
+
+# Track SSH config changes
+-w /etc/ssh/sshd_config -p wa -k ssh_config
+
+# (Optional) Track auth logs
+-w /var/log/secure -p wa -k authlog

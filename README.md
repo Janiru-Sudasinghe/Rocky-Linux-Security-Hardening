@@ -142,5 +142,4 @@ Below are the screenshots verifying the hardening steps. Click the links to view
 │   ├── hardening.rules
 │   └── 99-security.conf
 ├── evidence/              # Screenshots of verification steps
-├── reports/               # Lynis audit reports (Before/After)
 └── README.md              # Project documentation

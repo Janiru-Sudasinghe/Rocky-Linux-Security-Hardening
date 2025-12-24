@@ -93,6 +93,47 @@ The efficacy of the hardening process was measured quantitatively using **Lynis*
 
 ---
 
+## 6. Evidence
+Below are the screenshots verifying the hardening steps. Click the links to view the evidence.
+
+### Phase 1: Initial Setup & Key Management
+* [Task 1.1 - Initial Root Access & Network Check](Evidence/Task%201.1.png)
+* [Task 1.2 - Client-Server Connectivity Test](Evidence/Task%201.2.png)
+* [Task 1.3 - Verifying Sudoers (Wheel Group) Permissions](Evidence/Task%201.3.png)
+* [Task 1.4 - Generating and Copying SSH Keys](Evidence/Task%201.4.png)
+* [Task 1.5 - Verifying Authorized Keys Permissions](Evidence/Task%201.5.png)
+
+### Phase 2: Security Auditing
+* [Task 2.1 - Initial Lynis Security Audit (Index: 66)](Evidence/Task%202.1.png)
+
+### Phase 3: SSH Hardening Implementation
+* [Task 4.1 - Hardened SSH Configuration (sshd_config)](Evidence/Task%204.1.png)
+* [Task 4.2 - Verification: Root Login Disabled](Evidence/Task%204.2.png)
+* [Task 4.3 - Verification: User Access via Public Key](Evidence/Task%204.3.png)
+* [Task 4.4 - Verification: Password Auth Disabled](Evidence/Task%204.4.png)
+
+### Phase 4: System Maintenance & Updates
+* [Task 5.1 - Configuring Automatic Security Updates (dnf-automatic)](Evidence/Task%205.1.png)
+
+### Phase 5: System Logging & Auditing (Auditd)
+* [Task 6.1 - Defining Audit Rules (Identity & Privilege Escalation)](Evidence/Task%206.1.png)
+* [Task 6.2 - Loading and Verifying Active Audit Rules](Evidence/Task%206.2.png)
+* [Task 6.3 - Verification: Auditing Identity Changes (useradd)](Evidence/Task%206.3.png)
+* [Task 6.4 - Verification: Auditing Configuration Changes (ssh_config)](Evidence/Task%206.4.png)
+
+### Phase 6: File System & Permissions
+* [Task 7.1 - Hardening UMASK, Shared Directories, and Sticky Bits](Evidence/Task%207.1.png)
+
+### Phase 7: Network Kernel Hardening
+* [Task 8.1 - Configuring Sysctl Kernel Parameters](Evidence/Task%208.1.png)
+* [Task 8.2 - Applying and Verifying Kernel Security Settings](Evidence/Task%208.2.png)
+
+### Phase 8: Final Verification
+* [Task 9.1 - Post-Hardening Lynis Audit (Index: 72)](Evidence/Task%209.1.png)
+* [Task 10.1 - Final Audit & Validation](Evidence/Task%2010.1.png)
+
+---
+
 ## 📂 Repository Structure
 
 ```text

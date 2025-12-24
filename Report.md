@@ -44,21 +44,23 @@ The project followed a "Audit -> Remediation -> Verify" lifecycle:
 ## 6. Evidence
 Below are the screenshots verifying the hardening steps. Click the links to view the evidence.
 
-### Initial Assessment
-* [Task 1.1 - Initial Audit Score (Prior to Hardening)](Evidence/Task%201.1.png)
-* [Task 1.2 - SSH Connection Test](Evidence/Task%201.2.png)
-* [Task 1.3 - Initial IP Configuration](Evidence/Task%201.3.png)
-* [Task 1.4 - System Version Check](Evidence/Task%201.4.png)
-* [Task 1.5 - User Account Check](Evidence/Task%201.5.png)
+### Phase 1: Initial Setup & Key Management
+* [Task 1.1 - Initial Root Access & Network Check](Evidence/Task%201.1.png)
+* [Task 1.2 - Client-Server Connectivity Test](Evidence/Task%201.2.png)
+* [Task 1.3 - Verifying Sudoers (Wheel Group) Permissions](Evidence/Task%201.3.png)
+* [Task 1.4 - Generating and Copying SSH Keys](Evidence/Task%201.4.png)
+* [Task 1.5 - Verifying Authorized Keys Permissions](Evidence/Task%201.5.png)
 
-### Hardening Implementation
-* [Task 2.1 - Firewall Configuration](Evidence/Task%202.1.png)
-* [Task 4.1 - SSH Config Updates](Evidence/Task%204.1.png)
-* [Task 4.2 - Root Login Disabled](Evidence/Task%204.2.png)
-* [Task 4.3 - SSH Port Change Verification](Evidence/Task%204.3.png)
-* [Task 4.4 - SSH Service Restart](Evidence/Task%204.4.png)
+### Phase 2: Security Auditing
+* [Task 2.1 - Initial Lynis Security Audit (Prior to Hardening))](Evidence/Task%202.1.png)
 
-### Verification
+### Phase 3: SSH Hardening Implementation
+* [Task 4.1 - Hardened SSH Configuration (sshd_config)](Evidence/Task%204.1.png)
+* [Task 4.2 - Verification: Root Login Disabled](Evidence/Task%204.2.png)
+* [Task 4.3 - Verification: User Access via Public Key](Evidence/Task%204.3.png)
+* [Task 4.4 - Verification: Password Auth Disabled](Evidence/Task%204.4.png)
+
+### Phase 4: Verification
 * [Task 10.1 - Final Audit Score (Post Hardening)](Evidence/Task%2010.1.png)
 
 ## 7. Future Scope

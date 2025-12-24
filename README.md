@@ -78,8 +78,12 @@ The efficacy of the hardening process was measured quantitatively using **Lynis*
 
 ### Task 9: Verification 
 * **Final Audit:** Re-ran Lynis to calculate the hardening delta.
-    * *Baseline Score:* 66
-    * *Hardened Score:* 72
+
+| Metric | Initial State (Fresh Install) | Final State (Hardened) |
+| :--- | :--- | :--- |
+| **Lynis Hardening Index** | **66**  | **72**  |
+| **Total Warnings** | 25 | 3 |
+| **Firewall Status** | Inactive | Active (Public Zone Restricted) |
 
 ### Task 10: Intrusion Detection
 * **"Break & Detect" Scenario:**

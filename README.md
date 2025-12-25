@@ -9,6 +9,8 @@ This project involves the manual hardening of a generic Linux server (Rocky Linu
 
 The efficacy of the hardening process was measured quantitatively using **Lynis**, comparing the security posture before and after the applied controls.
 
+---
+
 ## 🛠 Architecture & Technologies
 * **OS:** Rocky Linux 10 (RHEL-compatible)
 * **Hypervisor:** VMware Workstation Pro
